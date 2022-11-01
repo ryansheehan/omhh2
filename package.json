@@ -33,6 +33,7 @@
     },
     "type": "module",
     "dependencies": {
+        "@xstate/svelte": "^2.0.0",
         "open-props": "^1.4.20",
         "xstate": "^4.34.0"
     }
