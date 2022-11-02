@@ -1,5 +1,5 @@
 <script lang="ts">
-    import StopLight, { State } from '$lib/stoplight.svelte';
+    import StopLight, { State } from '$lib/stoplight/stoplight.svelte';
 
     let state: State = State.Off; 
     
