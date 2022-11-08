@@ -2,9 +2,10 @@
 
 interface ImportMetaEnv {
     // add environment variables here
-    TEST: string;
-    VITE_TEST: string;
-    OMHH_TEST: string;
+    CMS_PROJECT_ID: string;
+    CMS_DATASET: string;
+    CMS_API_VERSION: string;
+    CMS_USE_CDN: string;
 }
 
 interface ImportMeta {

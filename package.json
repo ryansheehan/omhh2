@@ -34,7 +34,9 @@
     },
     "type": "module",
     "dependencies": {
+        "@portabletext/svelte": "^1.0.1",
         "@sanity/client": "^3.4.1",
+        "@sanity/image-url": "^1.0.1",
         "@xstate/svelte": "^2.0.0",
         "groq": "^2.33.2",
         "open-props": "^1.4.23"

@@ -1,16 +1,14 @@
 <script lang="ts">
-    const test = import.meta.env['TEST'];
-    const viteTest = import.meta.env['VITE_TEST'];
-    const omhhTest = import.meta.env.OMHH_TEST;
+    import {fetchAuthors} from '$lib/cms/query/author';
+
+    console.log('fetching authors');
+    fetchAuthors('ryan-sheehan').then(data => console.log(data));
 </script>
 
 <div class="main-container">
     <div class="headers">
         <h1>Oh My Heart and Home</h1>
         <h2>Recipes with Love</h2>
-        <p>test = {test}</p>
-        <p>viteTest = {viteTest}</p>
-        <p>omhhTest = {omhhTest}</p>
     </div>
 </div>
 
