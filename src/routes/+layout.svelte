@@ -2,4 +2,12 @@
   import "../app.postcss";
 </script>
 
-<slot />
+<div class="layout-wrapper">
+  <slot />
+</div>
+
+<style lang="postcss">
+  .layout-wrapper {
+    block-size: 100%;
+  }
+</style>
