@@ -6,7 +6,7 @@ const allAuthors = groq`
 `;
 
 const someAuthors = groq`
-    *[_type=="authors" && slug.current in $slugs]{slug,bio,name,image}
+    *[_type == "author" && slug.current in $slugs]{bio, image, name, slug}
 `;
 
 export interface Author {

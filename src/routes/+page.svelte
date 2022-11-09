@@ -1,15 +1,19 @@
 <script lang="ts">
     import {fetchAuthors} from '$lib/cms/query/author';
+    import Author from '$lib/components/author.svelte';
 
-    console.log('fetching authors');
-    fetchAuthors('ryan-sheehan').then(data => console.log(data));
+    // console.log('fetching authors');
+    // fetchAuthors('ryan-sheehan').then(data => console.log(data))
 </script>
 
 <div class="main-container">
     <div class="headers">
         <h1>Oh My Heart and Home</h1>
         <h2>Recipes with Love</h2>
-    </div>
+        {#await fetchAuthors('ryan-sheehan') then [author]}
+            <Author {author} />
+        {/await}
+    </div>    
 </div>
 
 <style lang="postcss">
