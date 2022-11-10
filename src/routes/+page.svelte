@@ -1,9 +1,6 @@
 <script lang="ts">
     import {fetchAuthors} from '$lib/cms/query/author';
     import Author from '$lib/components/author.svelte';
-
-    // console.log('fetching authors');
-    // fetchAuthors('ryan-sheehan').then(data => console.log(data))
 </script>
 
 <div class="main-container">
